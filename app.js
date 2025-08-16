@@ -36,3 +36,26 @@ function atualizarLista() {
   // Junta todos os nomes do array em uma única linha de texto, separados por vírgula e espaço.
   lista.textContent = amigos.join(", ");
 }
+/**
+ * ?Função para sortear um nome da lista de amigos.
+ * Ela é ativada pelo botão Sortear amigo.
+ */
+function sortearAmigo() {
+  // Pega o elemento onde o resultado do sorteio será exibido.
+  let resultado = document.getElementById("resultado");
+
+  // !valida se não houver nomes na lista, não é possível sortear.
+  if (amigos.length < 1) {
+    alert("Adicione pelo menos um amigo antes de sortear!");
+    return;
+  }
+
+  // Gera um numero aleatório entre 0 e o tamanho do array amigos.
+  const indiceSorteado = Math.floor(Math.random() * amigos.length);
+
+  // Usa o numero sorteado para pegar o nome correspondente.
+  const amigoSorteado = amigos[indiceSorteado];
+
+  // Exibe o nome sorteado na tela.
+  resultado.textContent = `O amigo secreto é: ${amigoSorteado}`;
+}
