@@ -26,3 +26,13 @@ function adicionarAmigo() {
   // Deixa o cursor no campo, pronto para a próxima digitação.
   inputAmigo.focus();
 }
+/**
+ * ?Função para atualizar a exibição da lista de amigos na página.
+ * Ela é chamada após inserir um novo nome.
+ */
+function atualizarLista() {
+  // Pega o elemento da lista onde os nomes serão mostrados.
+  let lista = document.getElementById("listaAmigos");
+  // Junta todos os nomes do array em uma única linha de texto, separados por vírgula e espaço.
+  lista.textContent = amigos.join(", ");
+}
