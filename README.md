@@ -49,5 +49,22 @@ Durante o desenvolvimento, enfrentei alguns desafios que foram cruciais para o a
 2.  Abra o arquivo `index.html` em seu navegador de preferência.
 3.  Pronto! Agora é só adicionar os nomes dos seus amigos e sortear!
 
+--
+
+## 💻 Prints
+
+<p>1 - Tela principal</p>
+<img width="736" height="524" alt="1" src="https://github.com/user-attachments/assets/11c2af1e-7d07-45df-bf89-3143811913d4" />
+
+<p>2 - Adicionando os amigos</p>
+<img width="722" height="511" alt="2" src="https://github.com/user-attachments/assets/99a33efd-a087-4756-a31e-c654dda1086a" />
+
+<p>3 - Lista com os amigos adicionados</p>
+<img width="697" height="532" alt="3" src="https://github.com/user-attachments/assets/b3d12dbc-a660-4f15-804c-d43112501b6d" />
+
+<p>4 - Nome do amigo sorteado</p>
+<img width="698" height="520" alt="4" src="https://github.com/user-attachments/assets/95e19d80-ebb3-456e-8345-941a7d236d91" />
+
 ---
+
 <p align="center">Feito por Jhames Wayne</p>
