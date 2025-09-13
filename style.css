@@ -7,13 +7,13 @@
     --color-text: #444444;
     --color-white: #FFFFFF;
     */
-  -color-primary: #ff6f61;
-  --color-secondary: #fff7ae;
-  --color-tertiary: #6ee7b7;
-  --color-button: #ffb347;
-  --color-button-hover: #ff9800;
-  --color-text: #22223b;
-  --color-white: black;
+  --color-primary: #7c3aed;
+  --color-secondary: #fde68a;
+  --color-tertiary: #34d399;
+  --color-button: #f472b6;
+  --color-button-hover: #ec4899;
+  --color-text: #1e293b;
+  --color-white: #ffffff;
 }
 
 /* Estilos gerais */
@@ -172,4 +172,10 @@ ul {
   width: 450px;
   height: auto;
   margin-left: 20px;
+  border-radius: 100px;
+}
+#mensagem-feedback {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  transition: color 0.3s;
 }

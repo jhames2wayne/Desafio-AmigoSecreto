@@ -5,29 +5,27 @@ let amigos = [];
  * Ela é ativada quando o usuário clica no botão Adicionar.
  */
 function adicionarAmigo() {
-  // Pega o elemento do site onde o usuário digita o nome.
   let inputAmigo = document.getElementById("amigo");
-  // Pega o valor digitado e remove espaços no inicio e no fim.
   let nomeAmigo = inputAmigo.value.trim();
+  let mensagem = document.getElementById("mensagem-feedback");
 
-  // Valida se o campo nome esta vazio.
-  // Se o campo estiver vazio, exibe um alerta e para a função.
+  // Valida se o campo nome está vazio.
   if (nomeAmigo === "") {
-    alert("Precisa de um nome para adicionar um amigo.");
-    // Para a função caso o nome seja inválido.
+    mensagem.textContent = "Precisa de um nome para adicionar um amigo.";
+    mensagem.style.color = "#ec4899"; // rosa forte
     return;
   }
 
-  // Adiciona o nome digitado ao array amigos.
   amigos.push(nomeAmigo);
-
-  // Alualiza a lista toda vez que um novo nome é adicionado.
   atualizarLista();
 
-  // Limpa o campo de texto para o próximo nome.
+  mensagem.textContent = "Amigo adicionado com sucesso!";
+  mensagem.style.color = "#34d399"; // verde claro
+
   inputAmigo.value = "";
-  // Deixa o cursor no campo, pronto para a próxima digitação.
   inputAmigo.focus();
+
+  setTimeout(() => (mensagem.textContent = ""), 2000); // Limpa mensagem após 2s
 }
 /**
  * Função para atualizar a exibição da lista de amigos na página.
